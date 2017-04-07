@@ -37,6 +37,7 @@ BLAS := atlas
 # We need to be able to find Python.h and numpy/arrayobject.h.
 PYTHON_INCLUDE := /usr/local/include/python2.7 \
 		/usr/local/lib/python2.7/dist-packages/numpy/core/include
+		
 # Anaconda Python distribution is quite popular. Include path:
 # PYTHON_INCLUDE := $(HOME)/anaconda/include \
 		# $(HOME)/anaconda/include/python2.7 \
@@ -47,7 +48,7 @@ PYTHON_LIB := /usr/local/lib
 # PYTHON_LIB := $(HOME)/anaconda/lib
 
 # Whatever else you find you need goes here.
-INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
 LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib
 
 BUILD_DIR := build
