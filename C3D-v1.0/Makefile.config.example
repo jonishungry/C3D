@@ -48,8 +48,8 @@ PYTHON_LIB := /usr/local/lib
 # PYTHON_LIB := $(HOME)/anaconda/lib
 
 # Whatever else you find you need goes here.
-INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
-LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/include /usr/include/hdf5/serial
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/lib
 
 BUILD_DIR := build
 DISTRIBUTE_DIR := distribute
